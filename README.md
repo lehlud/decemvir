@@ -1,16 +1,11 @@
-# decemvir
+# Decemvir
 
-A new Flutter project.
+An application for document and note management storing all data locally.
 
-## Getting Started
+To take notes Decemvir uses Markdown.
+Every note must be inside a document with itself must be stored inside a database. However such a database can also be contained within a document.
 
-This project is a starting point for a Flutter application.
+## plans
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- encryption (also with fingerprint sensors) in the future
+- synchronisation with nextcloud (and google drive and iCloud and Network drives and and and)
