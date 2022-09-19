@@ -26,6 +26,15 @@ class DataRoot {
     return result.toList();
   }
 
+  void updateDatabase(String id, Database database) {
+    final dbs = _json['databases'] as List? ?? [];
+
+    try {
+      final dbObject = dbs.firstWhere((db) => db['id'] == id);
+      dbObject['data'] = database.data;
+    } catch (_) {}
+  }
+
   void createDatabase(String name) {
     final dbs = (_json['databases'] as List? ?? []);
     dbs.add({

@@ -25,4 +25,16 @@ class ApiObject {
   }
 
   Map<String, dynamic> get data => _json['data'] ?? {};
+
+  void updateData(String key, dynamic value) {
+    final data = _json['data'] as Map? ?? {};
+    data[key] = value;
+    _json['data'] = data;
+    save();
+  }
+
+  void save() {
+    // do nothing
+    // should be overwritten in subclass
+  }
 }

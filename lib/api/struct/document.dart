@@ -25,4 +25,19 @@ class Document extends ApiObject {
 
     return result.toList();
   }
+
+  void updateDatabase(String id, Database database) {
+    final dbs = data['databases'] as List? ?? [];
+
+    try {
+      final dbObject = dbs.firstWhere((db) => db['id'] == id);
+      dbObject['data'] = database.data;
+    } catch (_) {}
+  }
+
+  @override
+  void save() {
+    parent.updateDocument(id, this);
+    parent.save();
+  }
 }

@@ -6,6 +6,21 @@ enum DBType {
   date,
 }
 
+String dbTypeToString(DBType dbType) {
+  switch (dbType) {
+    case DBType.int:
+      return 'Ganzzahl';
+    case DBType.float:
+      return 'Gleitkommazahl';
+    case DBType.string:
+      return 'Text';
+    case DBType.reference:
+      return 'Referenz';
+    case DBType.date:
+      return 'Datum';
+  }
+}
+
 class Type {
   final bool isArray;
   final DBType type;
