@@ -2,8 +2,8 @@
 
 An application for document and note management written in flutter.
 
-To take notes Decemvir uses Markdown.
-Every note must be inside a document with itself must be stored inside a database. However such a database can also be contained within a document.
+To take notes, Decemvir uses Markdown.
+Each note must reside in a document, which in turn must reside in a database. However, such a database can also be contained in a document.
 
 ## plans
 
